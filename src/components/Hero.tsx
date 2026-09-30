@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { site } from "@/data/site";
 
-const LETTERS = "STRESS GOD".split("");
+const WORDS = ["STRESS", "GOD"];
 
 export function Hero() {
   return (
@@ -13,14 +13,22 @@ export function Hero() {
         </div>
       </div>
 
-      <h1 className="display mt-8 flex flex-wrap text-[18vw] leading-[0.82] sm:text-[16vw] lg:text-[13.5vw]">
-        {LETTERS.map((ch, i) => (
-          <span
-            key={`${ch}-${i}`}
-            className="reveal is-in inline-block"
-            style={{ animationDelay: `${80 + i * 45}ms`, animationDuration: "1s" }}
-          >
-            {ch === " " ? "\u00A0" : ch}
+      <h1 className="display mt-8 flex flex-wrap items-baseline gap-x-[0.28em] text-[17vw] leading-[0.82] sm:text-[15vw] lg:text-[12.5vw]">
+        {WORDS.map((word, w) => (
+          <span key={word} className="inline-flex" aria-label={word}>
+            {word.split("").map((ch, i) => (
+              <span
+                key={`${ch}-${i}`}
+                aria-hidden
+                className="reveal is-in inline-block"
+                style={{
+                  animationDelay: `${80 + (w * word.length + i) * 45}ms`,
+                  animationDuration: "1s",
+                }}
+              >
+                {ch}
+              </span>
+            ))}
           </span>
         ))}
       </h1>
@@ -32,8 +40,8 @@ export function Hero() {
         <img
           src={site.images.hero}
           alt="The Stress God community"
-          width={1600}
-          height={1104}
+          width={1080}
+          height={608}
           className="size-full object-cover object-center"
         />
       </div>
