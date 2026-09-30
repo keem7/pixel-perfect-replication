@@ -15,13 +15,13 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "How Stress God started, what the community represents, and where it is going next.",
+          "StressGods is a creative collective founded by Mo Haze and Steve Ricks — music, sports, fashion, culture and community, from Sierra Leone to the world.",
       },
       { property: "og:title", content: "Our Story — STRESS GOD" },
       {
         property: "og:description",
         content:
-          "How Stress God started, what the community represents, and where it is going next.",
+          "StressGods is a creative collective founded by Mo Haze and Steve Ricks — music, sports, fashion, culture and community, from Sierra Leone to the world.",
       },
     ],
   }),

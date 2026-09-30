@@ -19,9 +19,9 @@ export const PLACEHOLDER_LINK = "#placeholder";
 
 export const site = {
   name: "STRESS GOD",
-  tagline: "Culture. Community. Expression.",
+  tagline: "Africa to the World. Turn Stress Into Creation.",
   intro:
-    "Stress God is a creative community built around artists, culture, music and expression.",
+    "StressGods is a creative collective founded by Mo Haze and Steve Ricks — music, sports, fashion, culture, craftsmanship and self-expression under one movement. Welcome to the official StressGods Sierra Leone community.",
   established: "Est. —", // PLACEHOLDER: add the founding year
   images: {
     hero: heroCrowd.url,
@@ -32,7 +32,7 @@ export const site = {
 export const contact = {
   email: "", // PLACEHOLDER e.g. "hello@stressgod.com"
   bookingEmail: "", // PLACEHOLDER e.g. "booking@stressgod.com"
-  location: "", // PLACEHOLDER e.g. "Lagos, Nigeria"
+  location: "Sierra Leone",
 };
 
 export type SocialKey =
@@ -131,46 +131,52 @@ export const featured = [
   },
 ];
 
-/** Home "Who we are" + About page copy. PLACEHOLDER text — replace with the real story. */
+/** About page copy — from the official StressGods Sierra Leone Community text. */
 export const about = {
   short:
-    "We are a community before we are anything else. Stress God exists so artists have somewhere to build, share work, and be taken seriously — a place where culture, music and expression sit in the same room.",
+    "StressGods is a creative collective founded by Mo Haze and Steve Ricks. With roots deeply connected to Africa and Jamaica, the duo brings together music, sports, fashion, culture, craftsmanship and self-expression — a movement built around community, creativity and opportunity.",
   sections: [
     {
       heading: "Who we are",
       body: [
-        "PLACEHOLDER — Stress God is a creative community built around artists, culture, music and expression. Replace this paragraph with the real introduction to who Stress God is and the people behind it.",
-        "PLACEHOLDER — a second paragraph describing the character of the community and what it feels like from the inside.",
+        "StressGods is a dynamic creative collective founded by two influential and culturally rich creators, Mo Haze and Steve Ricks. With roots deeply connected to Africa and Jamaica, the duo brings together music, sports, fashion, culture, craftsmanship, creativity, natural remedies and self-expression.",
+        "The vision extends beyond entertainment. StressGods is about creating a space where people can express themselves, discover their talents, connect with others, and transform everyday pressure into something meaningful.",
       ],
     },
     {
-      heading: "Where we came from",
+      heading: "Why StressGods",
       body: [
-        "PLACEHOLDER — the origin story. Where the community started, the city, the room, the first people involved.",
+        "The name represents a philosophy centred around creativity as a form of relief and expression. Music, art, fashion, craftsmanship, sports and culture can all provide ways for people to escape everyday pressure, reconnect with themselves and discover new forms of inspiration.",
+        "StressGods explores creativity as a source of expression, relief, positive energy and connection — while embracing traditional knowledge, craftsmanship and natural remedies as part of a broader relationship between culture, creativity and wellbeing.",
+        "Turn stress into creation.",
       ],
     },
     {
-      heading: "How it started",
+      heading: "The Sierra Leone connection",
       body: [
-        "PLACEHOLDER — how the community formed and grew, and the moments that shaped it.",
+        "With African roots that connect deeply with Sierra Leone, StressGods is building a growing community of supporters, creatives, athletes, entrepreneurs and fans across the country.",
+        "The Sierra Leone community represents an important part of the broader StressGods vision: creating a platform where music, sports, creativity, culture and entrepreneurship come together — an environment where people can connect, collaborate, showcase their talents and discover opportunities that help them move forward.",
       ],
     },
     {
-      heading: "What we represent",
+      heading: "Music, culture & expression",
       body: [
-        "PLACEHOLDER — the values and the standard. What Stress God stands for and refuses to compromise on.",
+        "Music is at the heart of the StressGods movement. From Afrobeats and hip-hop to freestyle energy, experimental sounds and unexpected creative directions, StressGods embraces different sounds and styles without limiting creativity to one genre.",
+        "Projects such as National Remedies reflect the movement's interest in combining music, culture, creativity and identity. StressGods is about exploring new ideas, breaking creative boundaries and keeping the energy moving.",
       ],
     },
     {
-      heading: "Artists, music and culture",
+      heading: "Sports & community",
       body: [
-        "PLACEHOLDER — the relationship between the community and the artists, the music and the wider culture it belongs to.",
+        "The StressGods vision extends beyond music and fashion into sports and community development. One of the long-term goals is to establish StressGods FC and a StressGods Basketball Team in Sierra Leone.",
+        "These teams and future sports initiatives are intended to create spaces where young people can develop their talents, compete, build discipline and connect with others — pathways for talented people who may not otherwise have access to the platforms, networks or opportunities they need.",
       ],
     },
     {
-      heading: "Where we are going",
+      heading: "The bigger vision",
       body: [
-        "PLACEHOLDER — the vision for the future: what is being built next and who it is for.",
+        "StressGods is also developing a distinctive clothing and fashion identity — combining culture, individuality, creativity, craftsmanship and modern streetwear into pieces that represent the spirit of the movement. Clothing can represent where someone comes from, what they believe and how they choose to express their identity.",
+        "The long-term vision is a creative and community ecosystem where music, sports, fashion, craftsmanship, natural knowledge, creativity and community intersect. From Sierra Leone to Africa and eventually to the world — Africa to the World. Turn stress into creation.",
       ],
     },
   ],
@@ -184,44 +190,17 @@ export interface Artist {
   links: { label: string; url: string }[];
 }
 
-/** PLACEHOLDER profiles — replace names, bios, photos and links. */
+/** The founders — the only named members so far. Add individual profiles as the community grows. */
 export const artists: Artist[] = [
   {
-    name: "Artist Name",
-    role: "Vocalist / Writer",
-    bio: "PLACEHOLDER — a short two-line bio for this member of the community. Replace with the real profile.",
-    image: stageMic.url,
+    name: "Mo Haze × Steve Ricks",
+    role: "Founders of StressGods",
+    bio: "The duo behind the movement. With roots deeply connected to Africa and Jamaica, they bring together music, sports, fashion, culture, craftsmanship and self-expression — and are building the StressGods community in Sierra Leone.",
+    image: duoStage.url,
     links: [
       { label: "Instagram", url: PLACEHOLDER_LINK },
       { label: "YouTube", url: PLACEHOLDER_LINK },
     ],
-  },
-  {
-    name: "Artist Name",
-    role: "Photographer",
-    bio: "PLACEHOLDER — a short two-line bio for this member of the community. Replace with the real profile.",
-    image: blueStage.url,
-    links: [
-      { label: "Instagram", url: PLACEHOLDER_LINK },
-      { label: "X", url: PLACEHOLDER_LINK },
-    ],
-  },
-  {
-    name: "Artist Name",
-    role: "Producer / DJ",
-    bio: "PLACEHOLDER — a short two-line bio for this member of the community. Replace with the real profile.",
-    image: duoStage.url,
-    links: [
-      { label: "Instagram", url: PLACEHOLDER_LINK },
-      { label: "TikTok", url: PLACEHOLDER_LINK },
-    ],
-  },
-  {
-    name: "Artist Name",
-    role: "Designer",
-    bio: "PLACEHOLDER — a short two-line bio for this member of the community. Replace with the real profile.",
-    image: crowdFloor.url,
-    links: [{ label: "Instagram", url: PLACEHOLDER_LINK }],
   },
 ];
 
