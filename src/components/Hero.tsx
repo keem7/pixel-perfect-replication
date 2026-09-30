@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { site } from "@/data/site";
 
-const LETTERS = "STRESS GOD".split("");
+const WORDS = ["STRESS", "GOD"];
 
 export function Hero() {
   return (
