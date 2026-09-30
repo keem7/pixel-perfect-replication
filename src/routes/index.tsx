@@ -46,8 +46,8 @@ function Index() {
                     src={block.image}
                     alt={block.title}
                     loading="lazy"
-                    width={1200}
-                    height={1504}
+                    width={1080}
+                    height={720}
                     className="size-full object-cover"
                   />
                 </div>

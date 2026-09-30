@@ -32,8 +32,8 @@ export function Hero() {
         <img
           src={site.images.hero}
           alt="The Stress God community"
-          width={1600}
-          height={1104}
+          width={1080}
+          height={608}
           className="size-full object-cover object-center"
         />
       </div>

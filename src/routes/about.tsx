@@ -2,11 +2,11 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHeader } from "@/components/PageHeader";
 import { Reveal } from "@/components/Reveal";
 import { about, site } from "@/data/site";
-import featureMusic from "@/assets/feature-music.jpg";
-import featureCommunity from "@/assets/feature-community.jpg";
-import gallery1 from "@/assets/gallery-1.jpg";
+import stageMic from "@/assets/stage-mic.jpg.asset.json";
+import crowdFloor from "@/assets/crowd-floor.jpg.asset.json";
+import duoStage from "@/assets/duo-stage.jpg.asset.json";
 
-const inlineImages = [featureCommunity, featureMusic, gallery1];
+const inlineImages = [crowdFloor.url, stageMic.url, duoStage.url];
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -39,8 +39,8 @@ function About() {
             src={site.images.hero}
             alt="The Stress God community"
             loading="lazy"
-            width={1600}
-            height={1104}
+            width={1080}
+            height={608}
             className="size-full object-cover"
           />
         </div>
