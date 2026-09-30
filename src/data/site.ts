@@ -9,14 +9,11 @@
  * ─────────────────────────────────────────────────────────────
  */
 
-import heroImage from "@/assets/hero.jpg";
-import featureArtists from "@/assets/feature-artists.jpg";
-import featureMusic from "@/assets/feature-music.jpg";
-import featureCommunity from "@/assets/feature-community.jpg";
-import artist1 from "@/assets/artist-1.jpg";
-import artist2 from "@/assets/artist-2.jpg";
-import artist3 from "@/assets/artist-3.jpg";
-import gallery1 from "@/assets/gallery-1.jpg";
+import heroCrowd from "@/assets/hero-crowd.jpg.asset.json";
+import stageMic from "@/assets/stage-mic.jpg.asset.json";
+import duoStage from "@/assets/duo-stage.jpg.asset.json";
+import crowdFloor from "@/assets/crowd-floor.jpg.asset.json";
+import blueStage from "@/assets/blue-stage.jpg.asset.json";
 
 export const PLACEHOLDER_LINK = "#placeholder";
 
@@ -27,7 +24,7 @@ export const site = {
     "Stress God is a creative community built around artists, culture, music and expression.",
   established: "Est. —", // PLACEHOLDER: add the founding year
   images: {
-    hero: heroImage,
+    hero: heroCrowd.url,
   },
 };
 
@@ -115,21 +112,21 @@ export const featured = [
     index: "01",
     title: "Artists",
     copy: "The people who make the work. Musicians, writers, photographers, designers and everyone in between.",
-    image: featureArtists,
+    image: duoStage.url,
     to: "/artists" as const,
   },
   {
     index: "02",
     title: "Music",
     copy: "Sessions, releases and the sound the community is building together.",
-    image: featureMusic,
+    image: stageMic.url,
     to: "/media" as const,
   },
   {
     index: "03",
     title: "Community",
     copy: "Rooms, nights and conversations. The part that does not fit in a feed.",
-    image: featureCommunity,
+    image: crowdFloor.url,
     to: "/connect" as const,
   },
 ];
