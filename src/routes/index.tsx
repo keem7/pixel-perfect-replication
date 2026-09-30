@@ -8,17 +8,20 @@ import { featured, site } from "@/data/site";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "STRESS GOD — Culture. Community. Expression." },
+      { title: "STRESS GOD — Africa to the World. Turn Stress Into Creation." },
       {
         name: "description",
         content:
-          "Stress God is a creative community built around artists, culture, music and expression.",
+          "StressGods is a creative collective founded by Mo Haze and Steve Ricks — music, sports, fashion, culture and craftsmanship. Welcome to the official StressGods Sierra Leone community.",
       },
-      { property: "og:title", content: "STRESS GOD — Culture. Community. Expression." },
+      {
+        property: "og:title",
+        content: "STRESS GOD — Africa to the World. Turn Stress Into Creation.",
+      },
       {
         property: "og:description",
         content:
-          "Stress God is a creative community built around artists, culture, music and expression.",
+          "StressGods is a creative collective founded by Mo Haze and Steve Ricks — music, sports, fashion, culture and craftsmanship. Welcome to the official StressGods Sierra Leone community.",
       },
     ],
   }),

@@ -30,7 +30,7 @@ function Artists() {
       <PageHeader
         eyebrow="Community"
         title="Artists"
-        lede="Musicians, photographers, producers and designers. These profiles are placeholders until the real ones are added."
+        lede="Mo Haze and Steve Ricks — the founders of the movement. New profiles are added as the community grows."
       />
 
       <section className="edge mt-16 md:mt-24">
