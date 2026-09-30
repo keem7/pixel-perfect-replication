@@ -190,7 +190,7 @@ export const artists: Artist[] = [
     name: "Artist Name",
     role: "Vocalist / Writer",
     bio: "PLACEHOLDER — a short two-line bio for this member of the community. Replace with the real profile.",
-    image: artist1,
+    image: stageMic.url,
     links: [
       { label: "Instagram", url: PLACEHOLDER_LINK },
       { label: "YouTube", url: PLACEHOLDER_LINK },
@@ -200,7 +200,7 @@ export const artists: Artist[] = [
     name: "Artist Name",
     role: "Photographer",
     bio: "PLACEHOLDER — a short two-line bio for this member of the community. Replace with the real profile.",
-    image: artist2,
+    image: blueStage.url,
     links: [
       { label: "Instagram", url: PLACEHOLDER_LINK },
       { label: "X", url: PLACEHOLDER_LINK },
@@ -210,7 +210,7 @@ export const artists: Artist[] = [
     name: "Artist Name",
     role: "Producer / DJ",
     bio: "PLACEHOLDER — a short two-line bio for this member of the community. Replace with the real profile.",
-    image: artist3,
+    image: duoStage.url,
     links: [
       { label: "Instagram", url: PLACEHOLDER_LINK },
       { label: "TikTok", url: PLACEHOLDER_LINK },
@@ -220,7 +220,7 @@ export const artists: Artist[] = [
     name: "Artist Name",
     role: "Designer",
     bio: "PLACEHOLDER — a short two-line bio for this member of the community. Replace with the real profile.",
-    image: featureArtists,
+    image: crowdFloor.url,
     links: [{ label: "Instagram", url: PLACEHOLDER_LINK }],
   },
 ];
@@ -239,57 +239,58 @@ export interface MediaItem {
 }
 
 /** PLACEHOLDER media — swap in real photos and YouTube links. */
+/** Live photos from the community's shows — swap captions and add YouTube links. */
 export const media: MediaItem[] = [
   {
-    title: "Street session",
-    category: "Photos",
-    caption: "PLACEHOLDER caption",
-    image: heroImage,
+    title: "Phone lights",
+    category: "Events",
+    caption: "The room lit up mid-set.",
+    image: heroCrowd.url,
     wide: true,
   },
   {
-    title: "Studio night",
+    title: "On the mic",
     category: "Videos",
     caption: "PLACEHOLDER — add the real YouTube link",
-    image: featureMusic,
+    image: stageMic.url,
     youtube: "", // PLACEHOLDER: e.g. "https://www.youtube.com/watch?v=XXXXXXXXXXX"
   },
   {
-    title: "Live room",
+    title: "Full room",
     category: "Events",
-    caption: "PLACEHOLDER caption",
-    image: featureCommunity,
+    caption: "Packed from the bar to the front of house.",
+    image: crowdFloor.url,
   },
   {
-    title: "Between takes",
+    title: "Two on stage",
     category: "Artist moments",
-    caption: "PLACEHOLDER caption",
-    image: artist3,
+    caption: "Trading verses under the stage lights.",
+    image: duoStage.url,
   },
   {
-    title: "Rooftop",
+    title: "Blue set",
     category: "Photos",
-    caption: "PLACEHOLDER caption",
-    image: gallery1,
+    caption: "Late set, blue lights.",
+    image: blueStage.url,
     wide: true,
   },
   {
-    title: "Portrait",
-    category: "Artist moments",
-    caption: "PLACEHOLDER caption",
-    image: artist2,
-  },
-  {
-    title: "Studio portrait",
+    title: "From the floor",
     category: "Photos",
-    caption: "PLACEHOLDER caption",
-    image: featureArtists,
+    caption: "The crowd mid-song.",
+    image: crowdFloor.url,
   },
   {
-    title: "Community night",
-    category: "Events",
-    caption: "PLACEHOLDER caption",
-    image: artist1,
+    title: "Front of stage",
+    category: "Artist moments",
+    caption: "Eye level with the performance.",
+    image: heroCrowd.url,
+  },
+  {
+    title: "Session light",
+    category: "Photos",
+    caption: "Warm room, cold drinks, live sound.",
+    image: stageMic.url,
   },
 ];
 
