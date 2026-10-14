@@ -39,8 +39,11 @@ export type SocialKey =
   | "whatsapp"
   | "instagram"
   | "youtube"
+  | "spotify"
   | "x"
+  | "threads"
   | "tiktok"
+  | "store"
   | "facebook"
   | "contact";
 
@@ -65,32 +68,50 @@ export const socials: SocialLink[] = [
     key: "whatsapp",
     label: "WhatsApp Community",
     note: "The main room. Everything happens here first.",
-    url: PLACEHOLDER_LINK, // PLACEHOLDER
+    url: "https://chat.whatsapp.com/Hte8xp9lj14DKQ1CLCBXO6",
     featured: true,
   },
   {
     key: "instagram",
     label: "Instagram",
     note: "Photos, drops and day-to-day.",
-    url: PLACEHOLDER_LINK, // PLACEHOLDER
+    url: "https://www.instagram.com/stressgods/",
   },
   {
     key: "youtube",
     label: "YouTube",
     note: "Sessions, videos and long-form.",
-    url: PLACEHOLDER_LINK, // PLACEHOLDER
+    url: "https://www.youtube.com/@stressgods",
+  },
+  {
+    key: "spotify",
+    label: "Spotify",
+    note: "Stream the music.",
+    url: "https://open.spotify.com/artist/7GerkwZX0S7fy9mssayeeQ",
   },
   {
     key: "x",
     label: "X / Twitter",
     note: "Announcements and conversation.",
-    url: PLACEHOLDER_LINK, // PLACEHOLDER
+    url: "https://x.com/stressgods",
+  },
+  {
+    key: "threads",
+    label: "Threads",
+    note: "Conversation and daily posts.",
+    url: "https://www.threads.com/@stressgods",
   },
   {
     key: "tiktok",
     label: "TikTok",
     note: "Short clips from the collective.",
-    url: PLACEHOLDER_LINK, // PLACEHOLDER
+    url: "https://www.tiktok.com/@stressgods",
+  },
+  {
+    key: "store",
+    label: "Store",
+    note: "Official store and visuals.",
+    url: "https://stressgods.bandzoogle.com/visuals",
   },
   {
     key: "facebook",
