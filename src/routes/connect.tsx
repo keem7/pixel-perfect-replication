@@ -11,13 +11,13 @@ export const Route = createFileRoute("/connect")({
       {
         name: "description",
         content:
-          "Join the Stress God WhatsApp community and follow us on Instagram, YouTube, X, TikTok and Facebook.",
+          "Join the StressGods WhatsApp community and follow us on Instagram, YouTube, Spotify, X, Threads, TikTok and the official store.",
       },
       { property: "og:title", content: "Connect — STRESS GOD" },
       {
         property: "og:description",
         content:
-          "Join the Stress God WhatsApp community and follow us on Instagram, YouTube, X, TikTok and Facebook.",
+          "Join the StressGods WhatsApp community and follow us on Instagram, YouTube, Spotify, X, Threads, TikTok and the official store.",
       },
     ],
   }),
