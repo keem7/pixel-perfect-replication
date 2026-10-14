@@ -190,16 +190,32 @@ export interface Artist {
   links: { label: string; url: string }[];
 }
 
-/** The founders — the only named members so far. Add individual profiles as the community grows. */
+/** The founders — one profile each. */
 export const artists: Artist[] = [
   {
-    name: "Mo Haze × Steve Ricks",
-    role: "Founders of StressGods",
-    bio: "The duo behind the movement. With roots deeply connected to Africa and Jamaica, they bring together music, sports, fashion, culture, craftsmanship and self-expression — and are building the StressGods community in Sierra Leone.",
-    image: duoStage.url,
+    name: "Mo Haze",
+    role: "Founder of StressGods",
+    bio: "Founder of StressGods. With roots deeply connected to Africa and Jamaica, he brings music, sports, fashion, culture, craftsmanship and self-expression together — and is building the StressGods community in Sierra Leone.",
+    image: stageMic.url,
     links: [
-      { label: "Instagram", url: PLACEHOLDER_LINK },
-      { label: "YouTube", url: PLACEHOLDER_LINK },
+      { label: "Spotify", url: "https://open.spotify.com/artist/7GerkwZX0S7fy9mssayeeQ" },
+      { label: "Apple Music", url: "https://music.apple.com/us/artist/stressgods/1097961733" },
+      { label: "Amazon Music", url: "https://www.amazon.com/s?k=StressGods&i=digital-music" },
+      { label: "StressGods Medical Center", url: "https://stressgods.com" },
+      { label: "Pandora", url: PLACEHOLDER_LINK },
+    ],
+  },
+  {
+    name: "Steve Ricks",
+    role: "Founder of StressGods",
+    bio: "Founder of StressGods. Rooted in Africa and Jamaica, he helps drive the movement's music, culture, craftsmanship and community — turning stress into creation, from Sierra Leone outward.",
+    image: blueStage.url,
+    links: [
+      { label: "Spotify", url: "https://open.spotify.com/artist/7GerkwZX0S7fy9mssayeeQ" },
+      { label: "Apple Music", url: "https://music.apple.com/us/artist/stressgods/1097961733" },
+      { label: "Amazon Music", url: "https://www.amazon.com/s?k=StressGods&i=digital-music" },
+      { label: "StressGods Medical Center", url: "https://stressgods.com" },
+      { label: "Pandora", url: PLACEHOLDER_LINK },
     ],
   },
 ];
