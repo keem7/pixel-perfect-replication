@@ -100,7 +100,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
-  errorComponent: ErrorComponent,
+  errorComponent: Object.assign(ErrorComponent, { preload: async () => {} }),
 });
 
 function RootShell({ children }: { children: ReactNode }) {
