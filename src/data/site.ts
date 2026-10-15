@@ -1,6 +1,6 @@
 /**
  * ─────────────────────────────────────────────────────────────
- *  STRESS GOD — EDIT EVERYTHING HERE
+ *  STRESSGODS — EDIT EVERYTHING HERE
  * ─────────────────────────────────────────────────────────────
  *  This is the single file to change site text, links, artists
  *  and media. No other file needs editing for content updates.
@@ -19,7 +19,7 @@ import romanoPhoto from "@/assets/romano.jpg.asset.json";
 export const PLACEHOLDER_LINK = "#placeholder";
 
 export const site = {
-  name: "STRESS GOD",
+  name: "STRESSGODS",
   tagline: "Africa to the World. Turn Stress Into Creation.",
   intro:
     "StressGods is a creative collective founded by Mo Haze and Steve Ricks — music, sports, fashion, culture, craftsmanship and self-expression under one movement. This site is the home of the official StressGods Sierra Leone community.",
@@ -243,7 +243,7 @@ export const artists: Artist[] = [
   {
     name: "Romano",
     role: "Producer",
-    bio: "Producer and part of the StressGods team. A big-time producer behind the sound of the movement.",
+    bio: "Producer and part of the StressGods team. Romano shapes the sound behind the movement — the beats, sessions and studio work that carry the community's music from an idea to something you can hear. He works across the collective's projects, turning everyday pressure into record.",
     image: romanoPhoto.url,
     links: [{ label: "Instagram", url: "https://www.instagram.com/realxromano" }],
   },

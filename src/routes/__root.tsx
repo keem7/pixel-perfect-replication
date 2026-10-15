@@ -81,7 +81,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "STRESS GOD — The Official Sierra Leone Community" },
+      { title: "STRESSGODS — The Official Sierra Leone Community" },
       {
         name: "description",
         content:

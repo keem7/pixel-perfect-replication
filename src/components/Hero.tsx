@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { site } from "@/data/site";
 
-const WORDS = ["STRESS", "GOD"];
+const WORDS = ["STRESS", "GODS"];
 
 export function Hero() {
   return (
@@ -39,7 +39,7 @@ export function Hero() {
       >
         <img
           src={site.images.hero}
-          alt="The Stress God community"
+          alt="The StressGods community"
           width={1080}
           height={608}
           className="size-full object-cover object-center"

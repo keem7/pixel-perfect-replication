@@ -7,13 +7,13 @@ import { contact } from "@/data/site";
 export const Route = createFileRoute("/connect")({
   head: () => ({
     meta: [
-      { title: "Connect — STRESS GOD" },
+      { title: "Connect — STRESSGODS" },
       {
         name: "description",
         content:
           "Every official channel of the StressGods Sierra Leone community in one place: the WhatsApp community, Instagram, YouTube, Spotify, X, Threads, TikTok, Facebook, the store and booking.",
       },
-      { property: "og:title", content: "Connect — STRESS GOD" },
+      { property: "og:title", content: "Connect — STRESSGODS" },
       {
         property: "og:description",
         content:

@@ -5,17 +5,17 @@ import { MediaGallery } from "@/components/MediaGallery";
 export const Route = createFileRoute("/media")({
   head: () => ({
     meta: [
-      { title: "Media — STRESS GOD" },
+      { title: "Media — STRESSGODS" },
       {
         name: "description",
         content:
-          "Photos, videos, events and artist moments from the Stress God community.",
+          "Photos, videos, events and artist moments from the StressGods community.",
       },
-      { property: "og:title", content: "Media — STRESS GOD" },
+      { property: "og:title", content: "Media — STRESSGODS" },
       {
         property: "og:description",
         content:
-          "Photos, videos, events and artist moments from the Stress God community.",
+          "Photos, videos, events and artist moments from the StressGods community.",
       },
     ],
   }),
