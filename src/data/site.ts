@@ -214,9 +214,9 @@ export interface Artist {
 /** The founders — one profile each. */
 export const artists: Artist[] = [
   {
-    name: "Mo Haze",
+    name: "Steve Ricks",
     role: "Founder of StressGods",
-    bio: "Founder of StressGods. With roots deeply connected to Africa and Jamaica, he brings music, sports, fashion, culture, craftsmanship and self-expression together — and is building the StressGods community in Sierra Leone.",
+    bio: "Founder of StressGods. With roots in Jamaica, he helps drive the movement's music, culture, craftsmanship and community — turning stress into creation, from Sierra Leone outward.",
     image: stageMic.url,
     links: [
       { label: "Spotify", url: "https://open.spotify.com/artist/7GerkwZX0S7fy9mssayeeQ" },
@@ -227,9 +227,9 @@ export const artists: Artist[] = [
     ],
   },
   {
-    name: "Steve Ricks",
+    name: "Mo Haze",
     role: "Founder of StressGods",
-    bio: "Founder of StressGods. Rooted in Africa and Jamaica, he helps drive the movement's music, culture, craftsmanship and community — turning stress into creation, from Sierra Leone outward.",
+    bio: "Founder of StressGods. With roots in Sierra Leone and Guinea, he brings music, sports, fashion, culture, craftsmanship and self-expression together — and is building the StressGods community in Sierra Leone.",
     image: blueStage.url,
     links: [
       { label: "Spotify", url: "https://open.spotify.com/artist/7GerkwZX0S7fy9mssayeeQ" },
