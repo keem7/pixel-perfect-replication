@@ -21,7 +21,7 @@ export const site = {
   name: "STRESS GOD",
   tagline: "Africa to the World. Turn Stress Into Creation.",
   intro:
-    "StressGods is a creative collective founded by Mo Haze and Steve Ricks — music, sports, fashion, culture, craftsmanship and self-expression under one movement. Welcome to the official StressGods Sierra Leone community.",
+    "StressGods is a creative collective founded by Mo Haze and Steve Ricks — music, sports, fashion, culture, craftsmanship and self-expression under one movement. This site is the home of the official StressGods Sierra Leone community.",
   established: "Est. —", // PLACEHOLDER: add the founding year
   images: {
     hero: heroCrowd.url,
@@ -30,8 +30,8 @@ export const site = {
 
 /** Contact details — PLACEHOLDER until the real ones are supplied. */
 export const contact = {
-  email: "", // PLACEHOLDER e.g. "hello@stressgod.com"
-  bookingEmail: "", // PLACEHOLDER e.g. "booking@stressgod.com"
+  email: "stressgods@gmail.com",
+  bookingEmail: "stressgods@gmail.com",
   location: "Sierra Leone",
 };
 
@@ -116,14 +116,14 @@ export const socials: SocialLink[] = [
   {
     key: "facebook",
     label: "Facebook",
-    note: "Events and community updates.",
-    url: PLACEHOLDER_LINK, // PLACEHOLDER
+    note: "Videos, events and community updates.",
+    url: "https://www.facebook.com/StressGods/videos/",
   },
   {
     key: "contact",
     label: "Contact / Booking",
     note: "Work with us, book us, reach the team.",
-    url: PLACEHOLDER_LINK, // PLACEHOLDER: use "mailto:booking@..." once known
+    url: "mailto:stressgods@gmail.com",
   },
 ];
 
@@ -155,7 +155,7 @@ export const featured = [
 /** About page copy — from the official StressGods Sierra Leone Community text. */
 export const about = {
   short:
-    "StressGods is a creative collective founded by Mo Haze and Steve Ricks. With roots deeply connected to Africa and Jamaica, the duo brings together music, sports, fashion, culture, craftsmanship and self-expression — a movement built around community, creativity and opportunity.",
+    "StressGods is a creative collective founded by Mo Haze and Steve Ricks. With roots deeply connected to Africa and Jamaica, the duo brings together music, sports, fashion, culture, craftsmanship and self-expression — a movement built around community, creativity and opportunity. This site is the home of its Sierra Leone community.",
   sections: [
     {
       heading: "Who we are",
@@ -173,10 +173,10 @@ export const about = {
       ],
     },
     {
-      heading: "The Sierra Leone connection",
+      heading: "The Sierra Leone community",
       body: [
-        "With African roots that connect deeply with Sierra Leone, StressGods is building a growing community of supporters, creatives, athletes, entrepreneurs and fans across the country.",
-        "The Sierra Leone community represents an important part of the broader StressGods vision: creating a platform where music, sports, creativity, culture and entrepreneurship come together — an environment where people can connect, collaborate, showcase their talents and discover opportunities that help them move forward.",
+        "This website is the StressGods Sierra Leone community — not a slice of something happening elsewhere. It is the home of a growing circle of supporters, creatives, athletes, entrepreneurs and fans across the country, with African roots that connect deeply with Sierra Leone.",
+        "It is where music, sports, creativity, culture and entrepreneurship come together: an environment where people can connect, collaborate, showcase their talents and discover opportunities that help them move forward.",
       ],
     },
     {

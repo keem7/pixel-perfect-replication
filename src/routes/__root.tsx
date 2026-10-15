@@ -81,9 +81,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "STRESS GOD" },
-      { name: "description", content: "Africa to the World. Turn Stress Into Creation." },
-      { property: "og:site_name", content: "STRESS GOD" },
+      { title: "STRESS GOD — The Official Sierra Leone Community" },
+      {
+        name: "description",
+        content:
+          "The official home of the StressGods Sierra Leone community. Africa to the World. Turn Stress Into Creation.",
+      },
+      { property: "og:site_name", content: "StressGods Sierra Leone" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

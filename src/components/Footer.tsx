@@ -10,6 +10,9 @@ export function Footer() {
           <div>
             <p className="display text-5xl sm:text-6xl md:text-7xl">{site.name}</p>
             <p className="eyebrow mt-4">{site.tagline}</p>
+            <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
+              The official StressGods Sierra Leone community.
+            </p>
           </div>
           <nav className="flex flex-wrap gap-x-8 gap-y-3">
             {nav.map((item) => (

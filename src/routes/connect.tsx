@@ -11,13 +11,13 @@ export const Route = createFileRoute("/connect")({
       {
         name: "description",
         content:
-          "Join the StressGods WhatsApp community and follow us on Instagram, YouTube, Spotify, X, Threads, TikTok and the official store.",
+          "Every official channel of the StressGods Sierra Leone community in one place: the WhatsApp community, Instagram, YouTube, Spotify, X, Threads, TikTok, Facebook, the store and booking.",
       },
       { property: "og:title", content: "Connect — STRESS GOD" },
       {
         property: "og:description",
         content:
-          "Join the StressGods WhatsApp community and follow us on Instagram, YouTube, Spotify, X, Threads, TikTok and the official store.",
+          "Every official channel of the StressGods Sierra Leone community in one place: the WhatsApp community, Instagram, YouTube, Spotify, X, Threads, TikTok, Facebook, the store and booking.",
       },
     ],
   }),
@@ -30,7 +30,7 @@ function Connect() {
       <PageHeader
         eyebrow="Join"
         title="Connect"
-        lede="Every official channel in one place. The WhatsApp community is the main room."
+        lede="Every official channel of the Sierra Leone community in one place. The WhatsApp room is where it all starts."
       />
 
       <section className="edge mt-14 md:mt-20">
