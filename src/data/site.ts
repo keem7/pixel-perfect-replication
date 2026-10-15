@@ -243,7 +243,7 @@ export const artists: Artist[] = [
   {
     name: "Romano",
     role: "Producer",
-    bio: "Producer and part of the StressGods team. A big-time producer behind the sound of the movement.",
+    bio: "Producer and part of the StressGods team. Romano shapes the sound behind the movement — the beats, sessions and studio work that carry the community's music from an idea to something you can hear. He works across the collective's projects, turning everyday pressure into record.",
     image: romanoPhoto.url,
     links: [{ label: "Instagram", url: "https://www.instagram.com/realxromano" }],
   },
