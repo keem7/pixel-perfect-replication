@@ -224,7 +224,7 @@ export const artists: Artist[] = [
       { label: "Apple Music", url: "https://music.apple.com/us/artist/stressgods/1097961733" },
       { label: "Amazon Music", url: "https://www.amazon.com/s?k=StressGods&i=digital-music" },
       { label: "StressGods Medical Center", url: "https://stressgods.com" },
-      { label: "Pandora", url: PLACEHOLDER_LINK },
+      { label: "Pandora", url: "https://www.pandora.com/artist/stressgods/asylum-phase-1/in-the-flesh/TRb6j6bJdKKmjkk" },
     ],
   },
   {
@@ -237,7 +237,7 @@ export const artists: Artist[] = [
       { label: "Apple Music", url: "https://music.apple.com/us/artist/stressgods/1097961733" },
       { label: "Amazon Music", url: "https://www.amazon.com/s?k=StressGods&i=digital-music" },
       { label: "StressGods Medical Center", url: "https://stressgods.com" },
-      { label: "Pandora", url: PLACEHOLDER_LINK },
+      { label: "Pandora", url: "https://www.pandora.com/artist/stressgods/asylum-phase-1/in-the-flesh/TRb6j6bJdKKmjkk" },
     ],
   },
   {
@@ -275,9 +275,9 @@ export const media: MediaItem[] = [
   {
     title: "On the mic",
     category: "Videos",
-    caption: "PLACEHOLDER — add the real YouTube link",
+    caption: "Autobahn — the StressGods video on YouTube.",
     image: stageMic.url,
-    youtube: "", // PLACEHOLDER: e.g. "https://www.youtube.com/watch?v=XXXXXXXXXXX"
+    youtube: "https://www.youtube.com/watch?v=uwkmzy3WNxA",
   },
   {
     title: "Full room",
