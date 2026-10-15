@@ -11,13 +11,13 @@ const inlineImages = [crowdFloor.url, stageMic.url, duoStage.url];
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "Our Story — STRESS GOD" },
+      { title: "Our Story — STRESSGODS" },
       {
         name: "description",
         content:
           "The story of StressGods — the creative collective founded by Mo Haze and Steve Ricks, and the Sierra Leone community this site is the home of.",
       },
-      { property: "og:title", content: "Our Story — STRESS GOD" },
+      { property: "og:title", content: "Our Story — STRESSGODS" },
       {
         property: "og:description",
         content:
@@ -37,7 +37,7 @@ function About() {
         <div className="media-hover aspect-[4/5] w-full bg-muted sm:aspect-[16/9]">
           <img
             src={site.images.hero}
-            alt="The Stress God community"
+            alt="The StressGods community"
             loading="lazy"
             width={1080}
             height={608}

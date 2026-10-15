@@ -7,17 +7,17 @@ import { artists } from "@/data/site";
 export const Route = createFileRoute("/artists")({
   head: () => ({
     meta: [
-      { title: "Artists & Community — STRESS GOD" },
+      { title: "Artists & Community — STRESSGODS" },
       {
         name: "description",
         content:
-          "The artists, makers and members who form the Stress God creative community.",
+          "The artists, makers and members who form the StressGods creative community.",
       },
-      { property: "og:title", content: "Artists & Community — STRESS GOD" },
+      { property: "og:title", content: "Artists & Community — STRESSGODS" },
       {
         property: "og:description",
         content:
-          "The artists, makers and members who form the Stress God creative community.",
+          "The artists, makers and members who form the StressGods creative community.",
       },
     ],
   }),

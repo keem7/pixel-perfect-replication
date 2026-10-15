@@ -8,7 +8,7 @@ import { featured, site } from "@/data/site";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "STRESS GOD — Africa to the World. Turn Stress Into Creation." },
+      { title: "STRESSGODS — Africa to the World. Turn Stress Into Creation." },
       {
         name: "description",
         content:
@@ -16,7 +16,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:title",
-        content: "STRESS GOD — Africa to the World. Turn Stress Into Creation.",
+        content: "STRESSGODS — Africa to the World. Turn Stress Into Creation.",
       },
       {
         property: "og:description",
