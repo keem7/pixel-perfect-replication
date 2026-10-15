@@ -30,7 +30,7 @@ function Artists() {
       <PageHeader
         eyebrow="Community"
         title="Artists"
-        lede="Mo Haze and Steve Ricks — the founders of the movement. New profiles are added as the community grows."
+        lede="The founders and the team behind the movement — Steve Ricks, Mo Haze and producer Romano. New profiles are added as the community grows."
       />
 
       <section className="edge mt-16 md:mt-24">

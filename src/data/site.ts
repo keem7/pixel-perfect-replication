@@ -14,6 +14,7 @@ import stageMic from "@/assets/stage-mic.jpg.asset.json";
 import duoStage from "@/assets/duo-stage.jpg.asset.json";
 import crowdFloor from "@/assets/crowd-floor.jpg.asset.json";
 import blueStage from "@/assets/blue-stage.jpg.asset.json";
+import romanoPhoto from "@/assets/romano.jpg.asset.json";
 
 export const PLACEHOLDER_LINK = "#placeholder";
 
@@ -238,6 +239,13 @@ export const artists: Artist[] = [
       { label: "StressGods Medical Center", url: "https://stressgods.com" },
       { label: "Pandora", url: PLACEHOLDER_LINK },
     ],
+  },
+  {
+    name: "Romano",
+    role: "Producer",
+    bio: "Producer and part of the StressGods team. A big-time producer behind the sound of the movement.",
+    image: romanoPhoto.url,
+    links: [{ label: "Instagram", url: "https://www.instagram.com/realxromano" }],
   },
 ];
 
