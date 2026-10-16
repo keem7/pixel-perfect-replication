@@ -1,0 +1,4 @@
+- [ ] Show founding year 2013 on the homepage and About page.
+- [ ] Audit static assets and recover original photos into the repository for independent hosting.
+- [ ] Verify photo loading, filenames, favicon, and existing interactions.
+- [ ] Report Vercel redeployment steps; custom-domain deployment verification requires its URL.
