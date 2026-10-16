@@ -7,6 +7,8 @@ import { contact } from "@/data/site";
 export const Route = createFileRoute("/connect")({
   head: () => ({
     meta: [
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "Connect — STRESSGODS" },
       {
         name: "description",

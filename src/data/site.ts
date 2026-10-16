@@ -9,12 +9,15 @@
  * ─────────────────────────────────────────────────────────────
  */
 
-import heroCrowd from "@/assets/hero-crowd.jpg.asset.json";
-import stageMic from "@/assets/stage-mic.jpg.asset.json";
-import duoStage from "@/assets/duo-stage.jpg.asset.json";
-import crowdFloor from "@/assets/crowd-floor.jpg.asset.json";
-import blueStage from "@/assets/blue-stage.jpg.asset.json";
-import romanoPhoto from "@/assets/romano.jpg.asset.json";
+/** Original photos shipped with every independent deployment. */
+export const siteImages = {
+  heroCrowd: "/images/hero-crowd.jpg",
+  stageMic: "/images/stage-mic.jpg",
+  duoStage: "/images/duo-stage.jpg",
+  crowdFloor: "/images/crowd-floor.jpg",
+  blueStage: "/images/blue-stage.jpg",
+  romanoPhoto: "/images/romano.jpg",
+};
 
 export const PLACEHOLDER_LINK = "#placeholder";
 
@@ -23,9 +26,9 @@ export const site = {
   tagline: "Africa to the World. Turn Stress Into Creation.",
   intro:
     "StressGods is a creative collective founded by Mo Haze and Steve Ricks — music, sports, fashion, culture, craftsmanship and self-expression under one movement. This site is the home of the official StressGods Sierra Leone community.",
-  established: "Est. —", // PLACEHOLDER: add the founding year
+  established: "Est. 2013",
   images: {
-    hero: heroCrowd.url,
+    hero: siteImages.heroCrowd,
   },
 };
 
@@ -134,21 +137,21 @@ export const featured = [
     index: "01",
     title: "Artists",
     copy: "The people who make the work. Musicians, writers, photographers, designers and everyone in between.",
-    image: duoStage.url,
+    image: siteImages.duoStage,
     to: "/artists" as const,
   },
   {
     index: "02",
     title: "Music",
     copy: "Sessions, releases and the sound the community is building together.",
-    image: stageMic.url,
+    image: siteImages.stageMic,
     to: "/media" as const,
   },
   {
     index: "03",
     title: "Community",
     copy: "Rooms, nights and conversations. The part that does not fit in a feed.",
-    image: crowdFloor.url,
+    image: siteImages.crowdFloor,
     to: "/connect" as const,
   },
 ];
@@ -218,7 +221,7 @@ export const artists: Artist[] = [
     name: "Steve Ricks",
     role: "Founder of StressGods",
     bio: "Founder of StressGods. With roots in Jamaica, he helps drive the movement's music, culture, craftsmanship and community — turning stress into creation, from Sierra Leone outward.",
-    image: stageMic.url,
+    image: siteImages.stageMic,
     links: [
       { label: "Spotify", url: "https://open.spotify.com/artist/7GerkwZX0S7fy9mssayeeQ" },
       { label: "Apple Music", url: "https://music.apple.com/us/artist/stressgods/1097961733" },
@@ -231,7 +234,7 @@ export const artists: Artist[] = [
     name: "Mo Haze",
     role: "Founder of StressGods",
     bio: "Founder of StressGods. With roots in Sierra Leone and Guinea, he brings music, sports, fashion, culture, craftsmanship and self-expression together — and is building the StressGods community in Sierra Leone.",
-    image: blueStage.url,
+    image: siteImages.blueStage,
     links: [
       { label: "Spotify", url: "https://open.spotify.com/artist/7GerkwZX0S7fy9mssayeeQ" },
       { label: "Apple Music", url: "https://music.apple.com/us/artist/stressgods/1097961733" },
@@ -244,7 +247,7 @@ export const artists: Artist[] = [
     name: "Romano",
     role: "Producer",
     bio: "Producer and part of the StressGods team. Romano shapes the sound behind the movement — the beats, sessions and studio work that carry the community's music from an idea to something you can hear. He works across the collective's projects, turning everyday pressure into record.",
-    image: romanoPhoto.url,
+    image: siteImages.romanoPhoto,
     links: [{ label: "Instagram", url: "https://www.instagram.com/realxromano" }],
   },
 ];
@@ -269,52 +272,52 @@ export const media: MediaItem[] = [
     title: "Phone lights",
     category: "Events",
     caption: "The room lit up mid-set.",
-    image: heroCrowd.url,
+    image: siteImages.heroCrowd,
     wide: true,
   },
   {
     title: "On the mic",
     category: "Videos",
     caption: "Autobahn — the StressGods video on YouTube.",
-    image: stageMic.url,
+    image: siteImages.stageMic,
     youtube: "https://www.youtube.com/watch?v=uwkmzy3WNxA",
   },
   {
     title: "Full room",
     category: "Events",
     caption: "Packed from the bar to the front of house.",
-    image: crowdFloor.url,
+    image: siteImages.crowdFloor,
   },
   {
     title: "Two on stage",
     category: "Artist moments",
     caption: "Trading verses under the stage lights.",
-    image: duoStage.url,
+    image: siteImages.duoStage,
   },
   {
     title: "Blue set",
     category: "Photos",
     caption: "Late set, blue lights.",
-    image: blueStage.url,
+    image: siteImages.blueStage,
     wide: true,
   },
   {
     title: "From the floor",
     category: "Photos",
     caption: "The crowd mid-song.",
-    image: crowdFloor.url,
+    image: siteImages.crowdFloor,
   },
   {
     title: "Front of stage",
     category: "Artist moments",
     caption: "Eye level with the performance.",
-    image: heroCrowd.url,
+    image: siteImages.heroCrowd,
   },
   {
     title: "Session light",
     category: "Photos",
     caption: "Warm room, cold drinks, live sound.",
-    image: stageMic.url,
+    image: siteImages.stageMic,
   },
 ];
 

@@ -5,6 +5,8 @@ import { MediaGallery } from "@/components/MediaGallery";
 export const Route = createFileRoute("/media")({
   head: () => ({
     meta: [
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "Media — STRESSGODS" },
       {
         name: "description",
