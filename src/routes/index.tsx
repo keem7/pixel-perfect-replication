@@ -8,6 +8,8 @@ import { featured, site } from "@/data/site";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "STRESSGODS — Africa to the World. Turn Stress Into Creation." },
       {
         name: "description",

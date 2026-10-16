@@ -7,6 +7,8 @@ import { artists } from "@/data/site";
 export const Route = createFileRoute("/artists")({
   head: () => ({
     meta: [
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "Artists & Community — STRESSGODS" },
       {
         name: "description",

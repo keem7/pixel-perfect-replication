@@ -1,16 +1,15 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHeader } from "@/components/PageHeader";
 import { Reveal } from "@/components/Reveal";
-import { about, site } from "@/data/site";
-import stageMic from "@/assets/stage-mic.jpg.asset.json";
-import crowdFloor from "@/assets/crowd-floor.jpg.asset.json";
-import duoStage from "@/assets/duo-stage.jpg.asset.json";
+import { about, site, siteImages } from "@/data/site";
 
-const inlineImages = [crowdFloor.url, stageMic.url, duoStage.url];
+const inlineImages = [siteImages.crowdFloor, siteImages.stageMic, siteImages.duoStage];
 
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "Our Story — STRESSGODS" },
       {
         name: "description",
@@ -31,7 +30,7 @@ export const Route = createFileRoute("/about")({
 function About() {
   return (
     <>
-      <PageHeader eyebrow="Our Story" title="About" lede={about.short} />
+      <PageHeader eyebrow={`Our Story · ${site.established}`} title="About" lede={about.short} />
 
       <Reveal className="edge mt-14">
         <div className="media-hover aspect-[4/5] w-full bg-muted sm:aspect-[16/9]">
