@@ -17,6 +17,10 @@ export const siteImages = {
   crowdFloor: "/images/crowd-floor.jpg",
   blueStage: "/images/blue-stage.jpg",
   romanoPhoto: "/images/romano.jpg",
+  slField: "/images/sierra-leone-field.jpg",
+  slGroup: "/images/sierra-leone-group.jpg",
+  slEnergy: "/images/sierra-leone-energy.jpg",
+  slMasks: "/images/sierra-leone-masks.jpg",
 };
 
 export const PLACEHOLDER_LINK = "#placeholder";
@@ -252,7 +256,12 @@ export const artists: Artist[] = [
   },
 ];
 
-export type MediaCategory = "Photos" | "Videos" | "Events" | "Artist moments";
+export type MediaCategory =
+  | "Photos"
+  | "Videos"
+  | "Events"
+  | "Artist moments"
+  | "Sierra Leone";
 
 export interface MediaItem {
   title: string;
@@ -267,7 +276,33 @@ export interface MediaItem {
 
 /** PLACEHOLDER media — swap in real photos and YouTube links. */
 /** Live photos from the community's shows — swap captions and add YouTube links. */
+/** Photos from when StressGods were on the ground in Sierra Leone. */
 export const media: MediaItem[] = [
+  {
+    title: "On the ground",
+    category: "Sierra Leone",
+    caption: "Out in the field with the community.",
+    image: siteImages.slField,
+  },
+  {
+    title: "With the people",
+    category: "Sierra Leone",
+    caption: "Standing together with the people of the community.",
+    image: siteImages.slGroup,
+    wide: true,
+  },
+  {
+    title: "Clean energy",
+    category: "Sierra Leone",
+    caption: "Solar backpacks delivered with Ideal Technologies Clean Energy.",
+    image: siteImages.slEnergy,
+  },
+  {
+    title: "The mask room",
+    category: "Sierra Leone",
+    caption: "Carved masks, woodwork and traditional instruments.",
+    image: siteImages.slMasks,
+  },
   {
     title: "Phone lights",
     category: "Events",

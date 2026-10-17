@@ -11,13 +11,13 @@ export const Route = createFileRoute("/media")({
       {
         name: "description",
         content:
-          "Photos, videos, events and artist moments from the StressGods community.",
+          "Photos, videos, events, artist moments and life in Sierra Leone from the StressGods community.",
       },
       { property: "og:title", content: "Media — STRESSGODS" },
       {
         property: "og:description",
         content:
-          "Photos, videos, events and artist moments from the StressGods community.",
+          "Photos, videos, events, artist moments and life in Sierra Leone from the StressGods community.",
       },
     ],
   }),
@@ -30,7 +30,7 @@ function Media() {
       <PageHeader
         eyebrow="Gallery"
         title="Media"
-        lede="Photos, videos, events and artist moments. Video tiles open a YouTube player once a link is added."
+        lede="Photos, videos, events, artist moments and life in Sierra Leone. Video tiles open a YouTube player once a link is added."
       />
       <section className="edge mt-12 md:mt-20">
         <MediaGallery />

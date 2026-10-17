@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 
 const CATEGORIES: (MediaCategory | "All")[] = [
   "All",
+  "Sierra Leone",
   "Photos",
   "Videos",
   "Events",
