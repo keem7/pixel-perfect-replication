@@ -17,7 +17,7 @@ export const Route = createFileRoute("/media")({
       {
         property: "og:description",
         content:
-          "Photos, videos, events, artist moments and life in Sierra Leone from the StressGods community.",
+          "Photos, videos, live shows and life in Sierra Leone from the StressGods community, including a night at Chapter One.",
       },
     ],
   }),
