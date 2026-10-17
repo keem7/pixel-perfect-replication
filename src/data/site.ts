@@ -21,6 +21,9 @@ export const siteImages = {
   slGroup: "/images/sierra-leone-group.jpg",
   slEnergy: "/images/sierra-leone-energy.jpg",
   slMasks: "/images/sierra-leone-masks.jpg",
+  chapterOneStage: "/images/chapter-one-stage.jpg",
+  chapterOneMic: "/images/chapter-one-mic.jpg",
+  chapterOneBooth: "/images/chapter-one-booth.jpg",
 };
 
 export const PLACEHOLDER_LINK = "#placeholder";
@@ -261,7 +264,8 @@ export type MediaCategory =
   | "Videos"
   | "Events"
   | "Artist moments"
-  | "Sierra Leone";
+  | "Sierra Leone"
+  | "Live Shows";
 
 export interface MediaItem {
   title: string;
@@ -278,6 +282,25 @@ export interface MediaItem {
 /** Live photos from the community's shows — swap captions and add YouTube links. */
 /** Photos from when StressGods were on the ground in Sierra Leone. */
 export const media: MediaItem[] = [
+  {
+    title: "Chapter One",
+    category: "Live Shows",
+    caption: "Live on stage at Chapter One in Sierra Leone.",
+    image: siteImages.chapterOneStage,
+    wide: true,
+  },
+  {
+    title: "Under the lights",
+    category: "Live Shows",
+    caption: "Mid-verse under the magenta lights at Chapter One.",
+    image: siteImages.chapterOneMic,
+  },
+  {
+    title: "At the booth",
+    category: "Live Shows",
+    caption: "The Chapter One stage, crest and all.",
+    image: siteImages.chapterOneBooth,
+  },
   {
     title: "On the ground",
     category: "Sierra Leone",
