@@ -26,6 +26,30 @@ function Tile({ item }: { item: MediaItem }) {
   const [playing, setPlaying] = useState(false);
   const id = item.youtube ? youtubeId(item.youtube) : "";
   const isVideo = item.category === "Videos";
+  const isClip = Boolean(item.video);
+  const canPlay = isClip || (isVideo && Boolean(id));
+
+  if (playing && isClip) {
+    return (
+      <div
+        className={cn(
+          "w-full bg-foreground",
+          item.wide ? "aspect-[16/10]" : "aspect-[4/5]",
+        )}
+      >
+        <video
+          poster={item.image}
+          controls
+          autoPlay
+          playsInline
+          className="size-full object-cover"
+        >
+          <source src={item.video} type="video/mp4" />
+          {item.videoWebm && <source src={item.videoWebm} type="video/webm" />}
+        </video>
+      </div>
+    );
+  }
 
   if (playing && id) {
     return (
@@ -45,12 +69,12 @@ function Tile({ item }: { item: MediaItem }) {
     <figure className="group">
       <button
         type="button"
-        disabled={!isVideo || !id}
+        disabled={!canPlay}
         onClick={() => setPlaying(true)}
         className={cn(
           "media-hover relative block w-full bg-muted",
           item.wide ? "aspect-[16/10]" : "aspect-[4/5]",
-          isVideo && id ? "cursor-pointer" : "cursor-default",
+          canPlay ? "cursor-pointer" : "cursor-default",
         )}
       >
         <img
@@ -59,7 +83,7 @@ function Tile({ item }: { item: MediaItem }) {
           loading="lazy"
           className="size-full object-cover"
         />
-        {isVideo && (
+        {canPlay && (
           <span className="absolute inset-0 flex items-center justify-center bg-foreground/25 transition-colors group-hover:bg-foreground/10">
             <span className="flex size-14 items-center justify-center border border-background text-background">
               <Play className="size-5" strokeWidth={1.5} />
@@ -72,7 +96,7 @@ function Tile({ item }: { item: MediaItem }) {
         <span className="eyebrow">{item.category}</span>
       </figcaption>
       <p className="mt-1 text-xs text-muted-foreground">
-        {isVideo && !id ? "YouTube link not provided yet" : item.caption}
+        {isVideo && !id && !isClip ? "YouTube link not provided yet" : item.caption}
       </p>
     </figure>
   );
