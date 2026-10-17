@@ -38,13 +38,15 @@ function Tile({ item }: { item: MediaItem }) {
         )}
       >
         <video
-          src={item.video}
           poster={item.image}
           controls
           autoPlay
           playsInline
           className="size-full object-cover"
-        />
+        >
+          <source src={item.video} type="video/mp4" />
+          {item.videoWebm && <source src={item.videoWebm} type="video/webm" />}
+        </video>
       </div>
     );
   }

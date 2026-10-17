@@ -30,6 +30,7 @@ export const siteImages = {
 /** Clips shipped with every independent deployment. */
 export const siteVideos = {
   kojumakoju: "/media/kojumakoju-festival.mp4",
+  kojumakojuWebm: "/media/kojumakoju-festival.webm",
 };
 
 export const PLACEHOLDER_LINK = "#placeholder";
@@ -282,6 +283,8 @@ export interface MediaItem {
   youtube?: string;
   /** Set for clips hosted with the site: a root-relative video file path. */
   video?: string;
+  /** Optional second copy of the same clip in WebM for browsers without H.264. */
+  videoWebm?: string;
   /** Layout weight in the gallery grid. */
   wide?: boolean;
 }
@@ -296,6 +299,7 @@ export const media: MediaItem[] = [
     caption: "Performing at the Kojumakoju festival in Sierra Leone.",
     image: siteImages.kojumakoju,
     video: siteVideos.kojumakoju,
+    videoWebm: siteVideos.kojumakojuWebm,
   },
   {
     title: "Chapter One",
