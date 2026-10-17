@@ -30,7 +30,7 @@ function Media() {
       <PageHeader
         eyebrow="Gallery"
         title="Media"
-        lede="Photos, videos, live shows and life in Sierra Leone — including the night at Chapter One. Video tiles open a YouTube player once a link is added."
+        lede="Photos, videos, live shows and life in Sierra Leone — the night at Chapter One, the Kojumakoju festival and more. Tiles with a play mark open a player right here."
       />
       <section className="edge mt-12 md:mt-20">
         <MediaGallery />
