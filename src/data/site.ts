@@ -24,6 +24,12 @@ export const siteImages = {
   chapterOneStage: "/images/chapter-one-stage.jpg",
   chapterOneMic: "/images/chapter-one-mic.jpg",
   chapterOneBooth: "/images/chapter-one-booth.jpg",
+  kojumakoju: "/images/kojumakoju-festival.jpg",
+};
+
+/** Clips shipped with every independent deployment. */
+export const siteVideos = {
+  kojumakoju: "/media/kojumakoju-festival.mp4",
 };
 
 export const PLACEHOLDER_LINK = "#placeholder";
@@ -274,6 +280,8 @@ export interface MediaItem {
   image: string;
   /** Set for videos: a full YouTube watch URL or the 11-character video ID. */
   youtube?: string;
+  /** Set for clips hosted with the site: a root-relative video file path. */
+  video?: string;
   /** Layout weight in the gallery grid. */
   wide?: boolean;
 }
@@ -282,6 +290,13 @@ export interface MediaItem {
 /** Live photos from the community's shows — swap captions and add YouTube links. */
 /** Photos from when StressGods were on the ground in Sierra Leone. */
 export const media: MediaItem[] = [
+  {
+    title: "Kojumakoju Festival",
+    category: "Live Shows",
+    caption: "Performing at the Kojumakoju festival in Sierra Leone.",
+    image: siteImages.kojumakoju,
+    video: siteVideos.kojumakoju,
+  },
   {
     title: "Chapter One",
     category: "Live Shows",
