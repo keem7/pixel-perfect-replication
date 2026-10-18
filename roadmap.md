@@ -2,4 +2,5 @@
 - [x] Audit static assets and recover original photos into the repository for independent hosting.
 - [x] Verify photo loading, filenames, favicon, and existing interactions.
 - [x] Document Vercel redeployment steps and the custom-domain diagnosis.
-- [ ] Verify the redeployed Vercel site and custom-domain mapping: blocked until the user deploys the updated commit and the supplied domain resolves.
+- [ ] Verify the redeployed Vercel site and custom-domain mapping: blocked until the user deploys the updated commit and the supplied domain resolves.- [x] Add Kojumakoju festival clip to the Media page.
+- [x] Add Google Search Console verification file.
