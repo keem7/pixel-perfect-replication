@@ -21,7 +21,7 @@ Recovered all six original photo files from the existing published Lovable site 
 
 - Navbar/footer logos are styled text, not missing logo image files.
 - Icons are inline SVGs from Lucide, not remote image files.
-- `public/favicon.ico` exists and is referenced as `/favicon.ico` by the root document.
+- `public/favicon.png` (64x64, padded square of the skull-and-flowers artwork) exists and is referenced as `/favicon.png` by the root document. The template's `public/favicon.ico` was removed once the new declaration was in place.
 - `public/robots.txt` exists. Neither public file needs a Lovable asset endpoint.
 - No CSS background-image URLs or separate background image files are referenced. The visual covers are ordinary image elements. The link underline uses a CSS `linear-gradient(currentColor, currentColor)`, not an external asset.
 - Styles are bundled by Vite; Google Fonts provides Archivo/Archivo Black through absolute HTTPS stylesheet URLs. These are independent of Lovable, unchanged.
