@@ -5,6 +5,7 @@ import { Reveal } from "@/components/Reveal";
 import { contact } from "@/data/site";
 
 export const Route = createFileRoute("/connect")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
       { property: "og:type", content: "website" },

@@ -3,6 +3,7 @@ import { PageHeader } from "@/components/PageHeader";
 import { MediaGallery } from "@/components/MediaGallery";
 
 export const Route = createFileRoute("/media")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
       { property: "og:type", content: "website" },
