@@ -6,6 +6,7 @@ import { about, site, siteImages } from "@/data/site";
 const inlineImages = [siteImages.crowdFloor, siteImages.stageMic, siteImages.duoStage];
 
 export const Route = createFileRoute("/about")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
       { property: "og:type", content: "website" },

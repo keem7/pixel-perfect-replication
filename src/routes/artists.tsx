@@ -5,6 +5,7 @@ import { Reveal } from "@/components/Reveal";
 import { artists } from "@/data/site";
 
 export const Route = createFileRoute("/artists")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
       { property: "og:type", content: "website" },
