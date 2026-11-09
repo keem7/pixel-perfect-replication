@@ -4,6 +4,8 @@ import { AboutSection } from "@/components/AboutSection";
 import { MediaGallery } from "@/components/MediaGallery";
 import { Reveal } from "@/components/Reveal";
 import { featured, site } from "@/data/site";
+import { UpcomingEvents } from "@/components/UpcomingEvents";
+import { MusicPlayer } from "@/components/MusicPlayer";
 
 export const Route = createFileRoute("/")({
   staticData: { sitemap: true },
@@ -73,6 +75,9 @@ function Index() {
           ))}
         </div>
       </section>
+
+      <UpcomingEvents />
+      <MusicPlayer />
 
       <section className="edge mt-24 md:mt-40">
         <div className="rule-t flex items-baseline justify-between gap-6 pt-6">
