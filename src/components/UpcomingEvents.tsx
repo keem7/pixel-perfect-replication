@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { upcomingEventsQuery } from "@/lib/events";
 import { Reveal } from "@/components/Reveal";
+import { EventPoster } from "@/components/EventPoster";
 
 export function UpcomingEvents() {
   const { data, isLoading } = useQuery(upcomingEventsQuery);
@@ -27,17 +28,15 @@ export function UpcomingEvents() {
             const d = new Date(ev.event_date);
             return (
               <Reveal as="li" key={ev.id} delay={i * 90} className="border-b border-border">
-                <div className="group grid grid-cols-[5rem_1fr] items-center gap-6 py-6 transition-colors md:grid-cols-[7rem_1fr_auto]">
-                  <div className="text-signal">
-                    <div className="display text-4xl md:text-5xl">{d.getDate()}</div>
-                    <div className="eyebrow mt-1 text-signal">
-                      {d.toLocaleDateString("en-GB", { month: "short", year: "numeric" })}
-                    </div>
-                  </div>
+                <div className="group grid grid-cols-[6rem_1fr] items-center gap-5 py-6 transition-colors md:grid-cols-[9rem_1fr_auto] md:gap-8">
+                  <EventPoster url={ev.poster_url} date={ev.event_date} />
                   <div>
                     <h3 className="display text-2xl transition-transform duration-500 group-hover:translate-x-2 md:text-3xl">
                       {ev.title}
                     </h3>
+                    <p className="eyebrow text-signal">
+                      {d.toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short", year: "numeric" })}
+                    </p>
                     <p className="mt-2 text-sm text-muted-foreground">
                       {[ev.venue, ev.city].filter(Boolean).join(" · ")}
                       {" · "}

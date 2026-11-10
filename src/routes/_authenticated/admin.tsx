@@ -2,6 +2,7 @@ import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useState, type FormEvent } from "react";
 import { supabase } from "@/integrations/supabase/client";
+import { EventPoster } from "@/components/EventPoster";
 
 export const Route = createFileRoute("/_authenticated/admin")({
   staticData: { sitemap: false },
@@ -26,6 +27,8 @@ function AdminPage() {
   const navigate = useNavigate();
   const [form, setForm] = useState(empty);
   const [msg, setMsg] = useState<string | null>(null);
+  const [poster, setPoster] = useState<File | null>(null);
+  const [fileKey, setFileKey] = useState(0);
 
   const role = useQuery({
     queryKey: ["is-admin"],
@@ -52,7 +55,18 @@ function AdminPage() {
   async function add(e: FormEvent) {
     e.preventDefault();
     setMsg(null);
+    let poster_url = "";
+    if (poster) {
+      const ext = poster.name.split(".").pop()?.toLowerCase() || "jpg";
+      const path = `${crypto.randomUUID()}.${ext}`;
+      const up = await supabase.storage.from("event-posters").upload(path, poster, { contentType: poster.type });
+      if (up.error) return setMsg(up.error.message);
+      const signed = await supabase.storage.from("event-posters").createSignedUrl(path, 60 * 60 * 24 * 365 * 5);
+      if (signed.error) return setMsg(signed.error.message);
+      poster_url = signed.data.signedUrl;
+    }
     const { error } = await supabase.from("events").insert({
+      poster_url,
       title: form.title.trim(),
       event_date: new Date(form.date).toISOString(),
       venue: form.venue.trim(),
@@ -62,6 +76,8 @@ function AdminPage() {
     });
     if (error) return setMsg(error.message);
     setForm(empty);
+    setPoster(null);
+    setFileKey((k) => k + 1);
     setMsg("Event added.");
     refresh();
   }
@@ -108,6 +124,10 @@ function AdminPage() {
             <input className={input} placeholder="City" value={form.city} onChange={(e) => setForm({ ...form, city: e.target.value })} />
             <textarea className={input} rows={3} placeholder="Short description" value={form.description} onChange={(e) => setForm({ ...form, description: e.target.value })} />
             <input className={input} type="url" placeholder="Ticket link (optional)" value={form.ticket_url} onChange={(e) => setForm({ ...form, ticket_url: e.target.value })} />
+            <label className="block space-y-2">
+              <span className="eyebrow">Poster or flyer (optional)</span>
+              <input key={fileKey} type="file" accept="image/*" onChange={(e) => setPoster(e.target.files?.[0] ?? null)} className="block w-full text-sm file:mr-4 file:border file:border-foreground file:bg-background file:px-4 file:py-2 file:text-xs file:uppercase file:tracking-[0.2em]" />
+            </label>
             <button className="w-full border border-foreground bg-foreground px-6 py-4 text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-background transition-colors hover:border-signal hover:bg-signal">
               Add event
             </button>
@@ -120,7 +140,8 @@ function AdminPage() {
               {events.data?.length === 0 && <li className="text-sm text-muted-foreground">No events yet.</li>}
               {events.data?.map((ev) => (
                 <li key={ev.id} className="flex items-start justify-between gap-4 border-b border-border py-4">
-                  <div>
+                  <EventPoster url={ev.poster_url} date={ev.event_date} className="w-14 shrink-0" />
+                  <div className="flex-1">
                     <p className="font-semibold">{ev.title}</p>
                     <p className="text-xs text-muted-foreground">
                       {new Date(ev.event_date).toLocaleString("en-GB", { dateStyle: "medium", timeStyle: "short" })}
