@@ -1,0 +1,3 @@
+alter table public.events add column poster_url text not null default '';
+create policy "Admins upload posters" on storage.objects for insert to authenticated with check (bucket_id = 'event-posters' and public.has_role(auth.uid(), 'admin'));
+create policy "Admins delete posters" on storage.objects for delete to authenticated using (bucket_id = 'event-posters' and public.has_role(auth.uid(), 'admin'));

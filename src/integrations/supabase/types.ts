@@ -21,6 +21,7 @@ export type Database = {
           description: string
           event_date: string
           id: string
+          poster_url: string
           ticket_url: string
           title: string
           venue: string
@@ -31,6 +32,7 @@ export type Database = {
           description?: string
           event_date: string
           id?: string
+          poster_url?: string
           ticket_url?: string
           title: string
           venue?: string
@@ -41,6 +43,7 @@ export type Database = {
           description?: string
           event_date?: string
           id?: string
+          poster_url?: string
           ticket_url?: string
           title?: string
           venue?: string
